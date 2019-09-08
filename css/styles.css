@@ -1,0 +1,173 @@
+body {
+	max-width: 1200px;
+	margin: 0 auto;
+	font-family:'Catamaran', sans-serif;
+	background: white;
+}
+
+/*container of the whole page that is responsive*/
+.container {
+	max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+/*css of the header of the page*/
+header {
+	padding: 20px 20px 20px 20px;
+	width: 100%;
+	border-bottom: 2px solid #7d97ad;
+}
+
+header .left {
+	float: left;
+}
+
+header .right {
+	float: right;
+}
+
+img .logo{
+    width:100%;
+    height:100%;
+    display: inline-block;
+}
+
+header .header-text {
+	font-size: 42px;
+	display: block;
+	margin-bottom: 0px;
+}
+
+header .header-subtext {
+	font-size: 20px;
+	display: block;
+	margin-top: 1px;
+	text-align: center;
+}
+
+/*css of the cover image*/
+.cover {
+	max-width: 100%;
+	padding: 20px 20px 20px 20px;
+    position: relative;
+}
+
+.cover-img {
+	width:100%;
+    height:100%;
+    display: inline-block;
+}
+
+/*css of the featured work section*/
+  .featured-work {
+    padding: 10px 10px 10px 10px;
+    font-size: 22px;
+  }
+
+.work {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 5px;
+}
+
+.works-container {
+	height: 30%;
+	width: 30%;
+	font-size: 18px;
+	text-align: center;
+	padding: 10px 10px 10px 10px;
+	background: #efefef;
+	border-radius: 10px;
+}
+
+.works-container img {
+	width: 80%;
+	border-radius: 10px;
+}
+
+.works-container h2 {
+	font-size: 20px;
+  color: #7d97ad;
+}
+
+footer {
+	font-size: 14px;
+	margin:0 auto;
+	padding:10px 20px;
+	border-top: 2px solid #7d97ad;
+}
+
+/*media Queries at 490px, 900px*/
+@media screen and (max-width: 490px) {
+
+  .logo {
+    max-height: 100px;
+    margin-top: 4px;
+  }
+  
+  header .header-text {
+    font-size: 28px;
+  }
+  
+  header .header-subtext {
+    font-size: 14px;
+  }
+  
+  .featured-work {
+  	text-align: center;
+  	font-size: 20px;
+  }
+
+  .work {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    float: center;
+  }
+
+  .works-container h2 {
+  	font-size: 18px;
+  }
+  
+  .works-container {
+    width: 80%;
+    font-size: 16px;
+    float: center;
+    text-align: center;
+    margin: auto auto 20px;
+  }
+}
+
+@media screen and (min-width: 491px) and (max-width: 900px) {
+   .logo {
+    max-height: 100px;
+  }
+
+  .header-text {
+    font-size: 32px;
+  }
+
+  .header-subtext {
+    font-size: 16px;
+  }
+
+  .featured-work {
+     text-align: center;
+  }
+
+  .work {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .works-container {
+    width: 60%;
+    font-size: 20px;
+    text-align: center;
+    margin: auto auto 20px;
+  }
+}
